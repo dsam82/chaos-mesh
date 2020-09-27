@@ -1,0 +1,70 @@
+2020-09-27T12:02:16.134Z	INFO	setup	Chaos controller manager is running in cluster scoped mode.
+Controller manager Version: version.Info{GitVersion:"v0.9.0-52+b0fd96ea427f85", GitCommit:"b0fd96ea427f85b7b94826e84592910ae28bea0a", BuildDate:"2020-09-27T11:30:06Z", GoVersion:"go1.14.6", Compiler:"gc", Platform:"linux/amd64"}
+2020-09-27T12:02:16.541Z	INFO	controller-runtime.metrics	metrics server is starting to listen	{"addr": ":10080"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=PodChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-podchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-podchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=PodChaos", "path": "/validate-chaos-mesh-org-v1alpha1-podchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-podchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=NetworkChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-networkchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-networkchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=NetworkChaos", "path": "/validate-chaos-mesh-org-v1alpha1-networkchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-networkchaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=IoChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-iochaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-iochaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=IoChaos", "path": "/validate-chaos-mesh-org-v1alpha1-iochaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-iochaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=TimeChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-timechaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-timechaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=TimeChaos", "path": "/validate-chaos-mesh-org-v1alpha1-timechaos"}
+2020-09-27T12:02:16.542Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-timechaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=KernelChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-kernelchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-kernelchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=KernelChaos", "path": "/validate-chaos-mesh-org-v1alpha1-kernelchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-kernelchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=StressChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-stresschaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-stresschaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=StressChaos", "path": "/validate-chaos-mesh-org-v1alpha1-stresschaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-stresschaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-podiochaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a mutating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=PodNetworkChaos", "path": "/mutate-chaos-mesh-org-v1alpha1-podnetworkchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/mutate-chaos-mesh-org-v1alpha1-podnetworkchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.builder	Registering a validating webhook	{"GVK": "chaos-mesh.org/v1alpha1, Kind=PodNetworkChaos", "path": "/validate-chaos-mesh-org-v1alpha1-podnetworkchaos"}
+2020-09-27T12:02:16.543Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/validate-chaos-mesh-org-v1alpha1-podnetworkchaos"}
+2020-09-27T12:02:16.543Z	INFO	setup	Setting up webhook server
+2020-09-27T12:02:16.544Z	INFO	inject-webhook	Creating Kubernetes client to talk to the api-server
+2020-09-27T12:02:16.546Z	INFO	inject-webhook	Created ConfigMap watcher	{"apiserver": "https://10.96.0.1:443", "template namespaces": "chaos-testing", "template labels": {"app.kubernetes.io/component":"template"}, "config labels": {"app.kubernetes.io/component":"webhook"}}
+2020-09-27T12:02:16.546Z	INFO	controller-runtime.webhook	registering webhook	{"path": "/inject-v1-pod"}
+2020-09-27T12:02:16.546Z	INFO	setup	Starting manager
+2020-09-27T12:02:16.547Z	INFO	setup	Launching watcher for ConfigMaps
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.webhook.webhooks	starting webhook server
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.manager	starting metrics server	{"path": "/metrics"}
+2020-09-27T12:02:16.547Z	INFO	inject-webhook	Watching for ConfigMaps for changes	{"template namespace": "chaos-testing", "labels": {"app.kubernetes.io/component":"webhook"}}
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "helloworldchaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "timechaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "kernelchaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "stresschaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.547Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "podchaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.548Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "httpchaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.549Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "iochaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.549Z	INFO	controller-runtime.controller	Starting EventSource	{"controller": "networkchaos", "source": "kind source: /, Kind="}
+2020-09-27T12:02:16.549Z	INFO	controller-runtime.certwatcher	Updated current TLS certificate
+2020-09-27T12:02:16.549Z	INFO	controller-runtime.webhook	serving webhook server	{"host": "", "port": 9443}
+2020-09-27T12:02:16.549Z	INFO	controller-runtime.certwatcher	Starting certificate watcher
+2020-09-27T12:02:16.647Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "helloworldchaos"}
+2020-09-27T12:02:16.647Z	INFO	controller-runtime.controller	Starting workers	{"controller": "helloworldchaos", "worker count": 1}
+2020-09-27T12:02:16.648Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "kernelchaos"}
+2020-09-27T12:02:16.648Z	INFO	controller-runtime.controller	Starting workers	{"controller": "kernelchaos", "worker count": 1}
+2020-09-27T12:02:16.649Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "timechaos"}
+2020-09-27T12:02:16.649Z	INFO	controller-runtime.controller	Starting workers	{"controller": "timechaos", "worker count": 1}
+2020-09-27T12:02:16.650Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "networkchaos"}
+2020-09-27T12:02:16.650Z	INFO	controller-runtime.controller	Starting workers	{"controller": "networkchaos", "worker count": 1}
+2020-09-27T12:02:16.650Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "httpchaos"}
+2020-09-27T12:02:16.651Z	INFO	controller-runtime.controller	Starting workers	{"controller": "httpchaos", "worker count": 1}
+2020-09-27T12:02:16.651Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "iochaos"}
+2020-09-27T12:02:16.651Z	INFO	controller-runtime.controller	Starting workers	{"controller": "iochaos", "worker count": 1}
+2020-09-27T12:02:16.651Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "stresschaos"}
+2020-09-27T12:02:16.651Z	INFO	controller-runtime.controller	Starting workers	{"controller": "stresschaos", "worker count": 1}
+2020-09-27T12:02:16.655Z	INFO	controller-runtime.controller	Starting Controller	{"controller": "podchaos"}
+2020-09-27T12:02:16.655Z	INFO	controller-runtime.controller	Starting workers	{"controller": "podchaos", "worker count": 1}
+2020-09-27T12:02:49.932Z	INFO	controllers.HelloWorldChaos	Hello World!	{"reconciler": "helloworldchaos"}
+2020-09-27T12:02:49.932Z	DEBUG	controller-runtime.controller	Successfully Reconciled	{"controller": "helloworldchaos", "request": "chaos-testing/hello-world"}

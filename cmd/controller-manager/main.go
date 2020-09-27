@@ -217,6 +217,13 @@ func main() {
 		setupLog.Error(err, "unable to create webhook", "webhook", "PodNetworkChaos")
 		os.Exit(1)
 	}
+	if err = (&controllers.HelloWorldChaosReconciler{
+		Client: mgr.GetClient(),
+		Log:    ctrl.Log.WithName("controllers").WithName("HelloWorldChaos"),
+	}).SetupWithManager(mgr); err != nil {
+		setupLog.Error(err, "unable to create controller", "controller", "HelloWorldChaos")
+		os.Exit(1)
+	}
 
 	// Init metrics collector
 	metricsCollector := metrics.NewChaosCollector(mgr.GetCache(), controllermetrics.Registry)
